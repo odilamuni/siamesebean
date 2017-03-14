@@ -1,0 +1,113 @@
+
+body{
+	padding-top: 70px;
+	font-family: 'Roboto Mono', monospace;
+}
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 70px;
+	background-color: #669999;
+	opacity: 0.7;
+	
+
+}
+.navigation{
+    height: 70px;
+    display: flex; /* make this a flexbox container */
+    justify-content: space-between; /* place our items as far apart from each other as possible */
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: stretch;
+    height: 70px;
+    white-space: nowrap;
+}
+.menu-link{
+	display: block;
+	padding: 1.5em;/* don't use % with padding cause it's about the font size*/
+	text-decoration: none;
+	color: white;
+}
+.brand{
+	color: transparent;
+	background: url(../images/SB_logo.jpg) no-repeat, top left;
+	border-radius: 50%;
+	background-size: contain;
+	overflow: hidden;/*esto hace que no se vea cuando la pantalla es muy chica?*/
+	height: 60px;
+	width: 60px;
+}
+.hero{
+	background: url(../images/hero-bird.jpg) top left;
+    color: #fafafa;
+    min-height: 350px;
+    padding: 50px 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.75)
+    background-size: cover;
+    height: 100vh;
+    margin-top: -70px;
+    
+
+}
+.hero-headline{
+	font-size: 2em;
+}
+.hero-content{
+font-size: 1.25em;
+}
+.hero-copy{
+display: flex;
+flex-flow: column;
+padding: 1em;
+/*align-items: center; / It's just one element so align-self*/
+line-height: 2em;
+margin-left: 20vw;/* 20 from the current centered position */
+align-self: center;
+}
+
+.main-content{
+	display: flex;
+}
+.column-container{
+	padding: 1em 0em;
+	display: flex;
+	margin: 0 -5em;
+	
+}
+
+.column{
+	flex:1 1 33.33%;
+	padding: 0 1.5em;
+	margin: 0 auto;
+}
+
+.column-headline{
+	color: #fff;
+	font-size: 1em;
+	background-color: #669999;
+	text-align: center;
+	padding: 0.5em;
+
+}
+.Etsy-link{
+	text-decoration: none;
+	background-color: #ff9999;
+	border: solid .5px #ff9999;
+	border-radius: 10%;
+	color: #fff;
+}
+.column-content{
+	line-height: 1.5em;
+}
